@@ -6,4 +6,4 @@ $conn = mysql_connect($host, $user, $pass);
 if ($conn->connect_error) {
 	die("connection faild:" . $conn->connect_error);
 	}
-echo 'Connected successfully';
+echo 'Connected successfully2';
