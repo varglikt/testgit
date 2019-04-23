@@ -15,6 +15,7 @@ pipeline{
 				stage ('Build Docker'){
 										steps {
 												sh 'docker build --tag=php54v2 .'
+												vi 'sudo docker run -p 80:80 --name phpedsi --rm php54v2'
 												}
 										}
 				}
