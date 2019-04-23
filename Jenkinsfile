@@ -9,6 +9,7 @@ pipeline{
 		stage('Checking Docker'){
 			steps{
 				sh 'sudo docker ps'
+				sh 'pwd'
 				}
 			}
 		}
