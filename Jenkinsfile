@@ -15,7 +15,7 @@ pipeline{
                                 stage ('Build Docker'){
                                                                                 steps {
                                                                                                 sh 'docker build --tag=php54v2 .'
-                                                                                                sh 'sudo docker run -p 80:80 --name phpTEST --rm php54v2'
+                                                                                                sh 'sudo docker run -p 80:80 -d --name phpTEST --rm php54v2'
                                                                                                 }
                                                                                 }
                                                                 stage ('Docker Compose'){
