@@ -14,7 +14,7 @@ pipeline{
 										}
 				stage ('Build Docker'){
 										steps {
-												sh 'docker build --tag=php54 .'
+												sh 'docker build --tag=php54v2 .'
 												}
 										}
 				}
