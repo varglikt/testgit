@@ -20,8 +20,8 @@ pipeline{
                                                                                 }
                                                                 stage ('Docker Compose'){
                                                                                 steps {
-                                                                                                docker stop phpTEST
-                                                                                                sudo docker-compose up -d
+												sh 'docker stop phpTEST'
+                                                                                                sh 'sudo docker-compose up -d'
                                                                                                 }
                                 }
                 }
